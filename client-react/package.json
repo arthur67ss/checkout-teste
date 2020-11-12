@@ -15,7 +15,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "craco start",
+    "serve": "craco start",
     "build": "craco build",
     "postbuild": "./postbuild.sh"
   },
