@@ -6,6 +6,20 @@ FLUSH PRIVILEGES;
 
 USE demo;
 
+USE demo;
+
+CREATE TABLE IF NOT EXISTS users (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `email` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- usuario teste
+INSERT INTO users (`email`, `password`)
+VALUES ('art.gameplay4576@gmail.com', 'admin123');
+
 CREATE TABLE IF NOT EXISTS plisio_order (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `order_id` INT(11) NOT NULL,
